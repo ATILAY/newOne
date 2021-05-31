@@ -1,0 +1,376 @@
+@media only screen and (max-width: 760px) {
+  .header-top-content-middle {
+    display: none;
+  }
+
+  .header-top-content-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .faq-accordion .card-header .faq-icon {
+    right: 3px !important;
+  }
+}
+
+.header-below-content-navigation-links {
+  font-weight: 800;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    color: #3a4759;
+    // line-height: 21px;
+  }
+
+  a:visited {
+    color: #cc171b;
+  }
+
+  li {
+    padding-left: 20px;
+  }
+
+  nav {
+    margin: 45px 0px;
+  }
+}
+
+.header-below-content {
+  display: flex;
+  align-items: center;
+}
+
+.bread-crumb {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  // justify-content: space-between;
+
+  .bread-crumb-main {
+    width: 80%;
+    display: flex;
+    // flex: 1;
+    flex-direction: row;
+  }
+  ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    li {
+      margin-right: 40px;
+      color: #3a4759;
+      font-weight: 500;
+    }
+  }
+}
+
+.hero {
+  .search-results {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d252d;
+  }
+  // text-shadow: 2px 2px 0px rgb(34 34 34 / 20%);
+  background-image: url(https://cdn.dopinghafiza.com/assets/images/temp/banner.png);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  color: #f1f6f9;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 650px;
+    height: 80px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    background: #ffffff;
+    border-start-start-radius: 10px;
+    align-items: center;
+
+    .input {
+      background: #ffffff;
+      border-left: none;
+      border: none;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+      width: 300px;
+    }
+
+    .input:focus,
+    .input:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.faq-section {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+
+  .faq-section-div {
+    display: block;
+    // justify-content: center;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 39px;
+    color: #1d252d;
+    font-weight: 700;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3a4759;
+  }
+}
+
+.content-and-video {
+  background: #ffffff;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+
+  .content-and-video-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #cc171b;
+    }
+    p {
+      color: #3a4759;
+      font-size: 14px;
+      line-height: 28px;
+    }
+  }
+  margin-bottom: 60px;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  // flex-direction: column;
+
+  .faq-cart-list {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+
+    .item-card {
+      background: #ffffff;
+      // text-align: center;
+      margin: auto 0;
+      height: 94px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #3a4759;
+      cursor: pointer;
+      max-width: 700px;
+      max-height: 600px;
+    }
+    .item-card:first-child {
+      margin-top: 75px;
+    }
+  }
+  .faq-details {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height */
+
+    /* #3A4759 - Charcoal */
+
+    color: #3a4759;
+  }
+}
+
+.faq-accordion {
+  // background: #E5E5E5;
+
+  .card-header {
+    background: #ffffff;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+
+    button {
+      text-decoration: none;
+      color: #3a4759;
+    }
+
+    .faq-icon {
+      position: absolute;
+      right: 35px;
+    }
+    .faq-card-body {
+      div {
+        font-weight: normal;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .card-body {
+    color: #3a4759;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    border: 0px !important;
+    background: #FFFFFF;
+    // border-right: 0px !important;
+    // border-left: 0px !important;
+
+    // height: 94px;
+  }
+}
+
+.after-faq-section {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+
+  margin-top: 60px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+
+    /* #1D252D - Gunmetal */
+
+    color: #1d252d;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    /* #3A4759 - Charcoal */
+
+    color: #3a4759;
+  }
+}
+
+.footer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  .footer-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+
+    h3 {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      /* identical to box height, or 118% */
+
+      /* #1D252D - Gunmetal */
+
+      color: #1d252d;
+      cursor: pointer;
+    }
+
+    p {
+      margin-top: 25px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      /* #3A4759 - Charcoal */
+
+      color: #3a4759;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-chat-related {
+  height: 100px;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  background: #4c3572;
+  border: 1px solid #2a1849;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  .footer-chat-image-related {
+    cursor: pointer;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #2e1754;
+    border-radius: 35px;
+  }
+
+  .footer-wishful {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+    color: #ffffff;
+  }
+
+  .start-conversation {
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 27px;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: transparent;
+    color: white;
+    padding: 12px 20px;
+  }
+}

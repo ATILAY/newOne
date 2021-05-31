@@ -1,0 +1,4 @@
+//https://stackoverflow.com/questions/52792238/firebase-callable-function-response-for-preflight-in-invalid
+//https://firebase.google.com/docs/functions/callable#sending_back_the_result
+//https://www.youtube.com/watch?v=NsHnVSJukj0
+//https://gist.github.com/mediavrog/49c4f809dffea4e00738a7f5e3bbfa59
