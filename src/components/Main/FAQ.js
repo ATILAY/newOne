@@ -41,21 +41,28 @@ const content = [
 export default function FAQ() {
   const itemEls = useRef(new Array());
 
+  const handleImageClick = e => e.target.previousSibling.click()
+
   const handleButtonClick = (e) => {
     if (e.target.nextSibling.src === plus) {
       e.target.nextSibling.src = minus
       e.target.parentElement.style.borderBottom = '0px'
+      e.target.style.color = '#CC171B'
+      e.target.style.fontWeight = 'bold'
+
     } else if (e.target.nextSibling.src === minus) {
       e.target.nextSibling.src = plus
       e.target.parentElement.style.borderBottom = '.2px solid rgba(0, 0, 0, 0.125)'
+      e.target.style.color ='#3a4759'
+      e.target.style.fontWeight = 'normal'
     }
     
-    console.log()
-
     itemEls.current.map((el) => {
-
       if (el !== e.target) {
         el.parentElement.nextSibling.classList.value = "collapse";
+        el.nextSibling.src = plus
+        el.style.color = '#3a4759'
+        el.style.fontWeight = 'normal'
       }
     });
   };
@@ -75,7 +82,7 @@ export default function FAQ() {
               >
                 {item.text}
               </Accordion.Toggle>
-              <img className="faq-icon" style={{position:'absolute'}} src={plus} />
+              <img onClick={handleImageClick} className="faq-icon" style={{position:'absolute'}} src={plus} />
             </Card.Header>
             <Accordion.Collapse eventKey={`${index}`}>
               <Card.Body className="faq-card-body"><div style={{fontSize:'14px'}}>{item.description}</div><div style={{marginTop:'30px'}}>{item.iframe}</div></Card.Body>
